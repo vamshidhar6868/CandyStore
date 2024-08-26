@@ -12,7 +12,7 @@ pipeline {
                 script {
                      withDockerRegistry(credentialsId: 'docker-cred') {
                          sh 'docker build -t praveenchinna/candystore .'
-                         sh 'docker push praveenchinna/candy:latest'
+                         sh 'docker push praveenchinna/candystore:latest'
                    }
                }
             }
